@@ -17,16 +17,16 @@ function emailSend() {
             backdrop-filter: blur(9px);
             -webkit-backdrop-filter: blur(9px);
         ">
-            <h2 style="font-family: 'Righteous', sans-serif; color: #fff; font-size: 2.4rem;">Hello,</h2>
-            <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.0rem; line-height: 150%;">This is an anonymous message:</p>
+            <h2 style="font-family: 'Righteous', sans-serif; color: #fff; font-size: 2.4rem;">anonymous</h2>
+            <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.2rem; line-height: 150%;"><em><u>Someone sent you a message:</u></em></p>
             <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.0rem; line-height: 150%;">${storyText}</p>
         </div>
     `;
 
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "reu12th@gmail.com",
-        Password: "4951BDDCFF2D6C9F4CAAFF846DD30773276B",
+        Username : "reu12th@gmail.com",
+        Password : "4951BDDCFF2D6C9F4CAAFF846DD30773276B",
         To: 'abdulreuben2580@gmail.com',
         From: "reu12th@gmail.com",
         Subject: "New Anonymous Message",
