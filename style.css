@@ -110,3 +110,8 @@ button:hover {
     width: 80%;
   }
 }
+
+.custom-confirm-button {
+  padding: 10px 35px 10px 20px; 
+  font-size: 12px;
+}

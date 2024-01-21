@@ -4,14 +4,15 @@ function emailSend() {
     // Customize the messageBody with personalized content and styling
     var messageBody = `
         <div style="
-            background: linear-gradient(90deg, #4158D0, #C850C0, #FFCC70);
+            background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(247, 30, 30) 100.3%);
             border-radius: 10px;
             color: #fff;
             padding: 20px;
-            margin: 10px;
+            margin: 10px auto; /* Center the content horizontally */
             text-align: center;
             font-family: 'Poppins', sans-serif;
             width: 95%;
+            max-width: 600px; /* Set a maximum width to prevent overflow */
             border: 1px solid rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(9px);
             -webkit-backdrop-filter: blur(9px);
@@ -37,7 +38,10 @@ function emailSend() {
                     title: "Successful",
                     text: "Your anonymous message has been sent!",
                     icon: "success",
-                    button: "OK",
+                    button: {
+                        text: "OK",
+                        className: "custom-confirm-button" // Add a custom class to the OK button
+                    },
                     closeOnClickOutside: false,
                     closeOnEsc: false,
                 });
@@ -46,7 +50,10 @@ function emailSend() {
                     title: "Error",
                     text: "There was an error sending your message!",
                     icon: "error",
-                    button: "OK",
+                    button: {
+                        text: "OK",
+                        className: "custom-confirm-button" // Add a custom class to the OK button
+                    },
                     closeOnClickOutside: false,
                     closeOnEsc: false,
                 });
