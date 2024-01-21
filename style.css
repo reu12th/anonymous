@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   width: 100%;
   padding: 0 10px;
+  position: relative;
 }
 
 body::before {
@@ -53,26 +54,28 @@ h2 {
   margin: 15px 0;
 }
 
-.input-field textarea {
+.input-field textarea,
+.input-field input {
   width: 100%;
-  min-height: 80px; /* Minimum height */
+  min-height: 80px;
   background: transparent;
   border: none;
   outline: none;
   font-size: 16px;
   color: #fff;
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-y: hidden;
 }
 
 .input-field textarea:focus~label,
-.input-field textarea:valid~label {
+.input-field textarea:valid~label,
+.input-field input:focus~label,
+.input-field input:valid~label {
   font-size: 0.8rem;
   top: 10px;
   transform: translateY(-120%);
 }
 
 button {
-  
   background: #fff;
   color: #000;
   font-weight: 600;
@@ -92,30 +95,18 @@ button:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Style the placeholder text */
 .input-field input::placeholder,
 .input-field textarea::placeholder {
-  color: #ccc; /* Set the color of the placeholder text */
-  font-style: italic; /* Optionally set the font style */
-  /* Add any other styles you want for the placeholder text */
+  color: #ccc;
+  font-style: italic;
 }
 
-/* Style the input and textarea */
-.input-field input,
-.input-field textarea {
-  width: 100%;
-  min-height: 200px; /* Minimum height */
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  color: #fff;
-  overflow-y: hidden; /* Hide vertical scrollbar */
-}
+@media (max-width: 768px) {
+  body::before {
+    background-size: cover;
+  }
 
-.input-field textarea:focus~label,
-.input-field textarea:valid~label {
-  font-size: 0.8rem;
-  top: 10px;
-  transform: translateY(-120%);
+  .wrapper {
+    width: 80%;
+  }
 }
