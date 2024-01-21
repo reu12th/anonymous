@@ -27,7 +27,7 @@ function emailSend() {
         Host: "smtp.elasticemail.com",
         Username : "reu12th@gmail.com",
         Password : "4951BDDCFF2D6C9F4CAAFF846DD30773276B",
-        To: 'lovetvstories@gmail.com',
+        To: 'lovetvanonymous@gmail.com',
         From: "reu12th@gmail.com",
         Subject: "New Anonymous Message",
         Body: messageBody,
