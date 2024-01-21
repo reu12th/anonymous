@@ -28,7 +28,7 @@ function emailSend() {
         Username : "lovetvstories@gmail.com",
         Password : "B9749C816F0637ACA2D3EE16E7FEB7C9D803",
         To: 'lovetvanonymous@gmail.com',
-        From: "reu12th@gmail.com",
+        From: "lovetvstories@gmail.com",
         Subject: "New Anonymous Message",
         Body: messageBody,
     }).then(
