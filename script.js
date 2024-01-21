@@ -17,8 +17,8 @@ function emailSend() {
             backdrop-filter: blur(9px);
             -webkit-backdrop-filter: blur(9px);
         ">
-            <h2 style="font-family: 'Righteous', sans-serif; color: #fff; font-size: 2.4rem;">anonymous</h2>
-            <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.2rem; line-height: 150%;"><em><u>Someone sent you a message:</u></em></p>
+            <h2 style="font-family: 'Righteous', sans-serif; color: #fff; font-size: 2.4rem;">Dear Love TV,</h2>
+            <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.2rem; line-height: 150%;"><em><u>Someone sent you a story:</u></em></p>
             <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.0rem; line-height: 150%;">${storyText}</p>
         </div>
     `;
