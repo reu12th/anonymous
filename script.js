@@ -4,7 +4,7 @@ function emailSend() {
     // Customize the messageBody with personalized content and styling
     var messageBody = `
         <div style="
-            background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(247, 30, 30) 100.3%);
+        background: radial-gradient(rgb(36, 59, 85) 20%, rgb(20, 30, 48) 80%);
             border-radius: 10px;
             color: #fff;
             padding: 20px;
@@ -19,7 +19,7 @@ function emailSend() {
         ">
             <h2 style="font-family: 'Righteous', sans-serif; color: #fff; font-size: 2.4rem;">Dear Love TV,</h2>
             <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.2rem; line-height: 150%;"><em><u>Someone sent you a story:</u></em></p>
-            <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.0rem; line-height: 150%;">${storyText}</p>
+            <p style="color: #fff; font-weight: 600; font-family: 'Lato', sans-serif; font-size: 1.0rem; line-height: 150%; text-align: justify; text-justify: auto;">${storyText}</p>
         </div>
     `;
 
